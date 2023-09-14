@@ -26,6 +26,10 @@ int s(int i, int b) {
 int main() {
   int a;
   scanf("%d", &a);
+  if (a == 1 || a == -1 || a == 0) {
+    printf("n/a");
+    return 0;
+  }
   if (a < 0)
     a = -a;
   for (int i = a; i > 1; i--) {
